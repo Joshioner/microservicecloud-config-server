@@ -1,14 +1,13 @@
 spring:
   profiles:
-    active:
-      - dev
+    active: dev
 ---
 server:
   port: 8201
 spring:
   profile: dev
   application:
-      name: microservicecloud-config-client
+    name: microservicecloud-config-client
 eureka:
   client:
     service-url:
@@ -23,4 +22,4 @@ spring:
 eureka:
   client:
     service-url:
-        defaultZone:  http://eureka-test.com:7001/eureka/
+      defaultZone:  http://eureka-test.com:7001/eureka/
